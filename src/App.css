@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,h1,h2{
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap:10%;
+}
+
+.app_container{
+  width: 100%;
+  padding: 0 10%;
+}
+
+.app_header{
+  background-color: grey;
+  margin-bottom: 10px;
+}
+
+.card_form{
+  padding: 10px 0;
+  background-color: grey;
+  width: 200px;
+  height: 80px;
+  border-radius: 5%;
+}
+
+.form_input{
+  padding: 4px;
+  width: 80%;
+}
+
+.btn{
+  padding: 5px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  border-radius: 15%;
+}
+
+.card_container{
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap:5%;
+}
+
+.card_list_item{
+  background-color: grey;
+  width: 280px;
+  height: 100%;
+  border-radius: 5%;
+  padding-bottom: 5px;
+}
+
+.card_header{
+  justify-content: space-between;
+  width: 85%;
+  padding: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card_delete{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.child_card_form{
+  padding: 10px 0;
+  background-color: grey;
+  width: 200px;
+  border-radius: 5%;
+  justify-content: space-around;
+  height: 120px;
+}
+
+.child_card_container{
+  width: 80%;
+  background-color: white;
+  color: black;
+  margin: 10px 0px;
+  margin-bottom: 10px;
+}
+.child_card_header{
+  color: black;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.card_description{
+  padding: 5px;
 }
